@@ -1,0 +1,21 @@
+/* Short form (multiple values per line)*/
+
+body {
+    margin:0 0 0 0;
+    border:  1xp solid red;
+    background-color: antique white;
+    background: pink;
+    color: #404040;
+}
+
+header, main, footer {
+    background-color: white;
+    padding: 25px;
+}
+h1 {
+    font-family: heletica, arial, sans serif;
+}
+ nav{
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     font-size: large;
+ }
