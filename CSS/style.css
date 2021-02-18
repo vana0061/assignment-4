@@ -40,10 +40,11 @@ header, footer{
     opacity: 50%;
 }
 
-a:link{
+.link{
    color:peru;
    text-decoration: none;
 }
+
 a:visited{
 color:rgb(139, 86, 32);
 text-decoration: none;
@@ -126,12 +127,14 @@ nav ul li a:visited {
     padding: 10px;
     border-radius: 20px;
     background:white;
+    border: solid peru;
 }
 
 nav ul li a:hover{
     color:peachpuff;
     border-radius: 20px;
     padding: 10px;
+    border: solid white;
 }
 
 nav ul li .current a:link{
