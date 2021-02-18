@@ -1,21 +1,143 @@
-/* Short form (multiple values per line)*/
+/* Short form (multiple values per line)
+
+    - Add a CSS file to your website
+    - Inheritance - target the body tag to change the font family and increase the font size to 18px
+    - Select multiple elements - select both header and footer elements and add the same background colour
+    - Class selector - add a class of site-title to the main heading of the site and select the class in CSS to change the colour of text of the heading
+    - Id selector - add an id my-image to your image and select the id in CSS to add a box-shadow with 0 horizontal and vertical placement, 2px of the blur, 1px of the spread and black colour
+    - Replace the bullets from the list of hobbies with squares
+    - Using the nth-child selector - add a background to the odd list items in the hobby list
+    - Styling the Navigation
+        Remove the bullets from the unordered list in navigation (only if you have used the ul tag inside the nav tag) 
+        Remove the underline from the links
+        Add a background and border to the links
+        Change the background colour on hover or focus state of the links
+    - Validate your HTML
+
+*/
 
 body {
     margin:0 0 0 0;
-    border:  1xp solid red;
-    background-color: pink;
-    background: pink;
+    background: rgb(253, 247, 248);
     color: #404040;
+    font-size: 18px;
 }
 
-header, main, footer {
+.site-title{
+    font-size: 200%;
+    color: #D95D39;
+    opacity: 100%;
+}
+
+header, footer{
+    width:960px;
+    padding:20px;
+    margin-left:auto;
+    margin-right:auto;
+    border-bottom: 20px solid whitesmoke;
+    background-color: peachpuff;
+    opacity: 50%;
+}
+
+a:link{
+   color:peru;
+   text-decoration: none;
+}
+a:visited{
+color:rgb(139, 86, 32);
+text-decoration: none;
+}
+
+a:hover{
+    background-color: pink;
+}
+
+main {
+    width:960px;
+    padding:20px;
+    margin-left:auto;
+    margin-right:auto;
+    border-bottom: 20px solid whitesmoke;
     background-color: white;
-    padding: 25px;
 }
-h1 {
-    font-family: heletica, arial, sans serif;
+
+h1, h2, h3, header{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: x-large;
+    color: #ff977a;
 }
- nav{
-     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-     font-size: large;
- }
+
+#my-image {
+    margin:auto;
+    box-shadow: 0px 0px 1px 2px black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.white{
+    background: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.index-list{
+    list-style-type: square;
+    list-style-position: inside;
+    padding: 50px;
+    background: 0;
+}
+
+ul li:nth-child(odd){
+    background:rgb(255, 252, 221);
+}
+
+#articleone{
+    border-top: solid peachpuff;
+    border-bottom:solid peachpuff;
+    padding-bottom: 20px;
+}
+
+.top {
+    padding-top: 50px;
+}
+
+.bottom{
+    padding-bottom: 50px;
+}
+
+nav ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+
+nav ul li {
+    display: inline-block;
+    color: #000000;
+    background: none;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 20px;
+    background:white;
+}
+
+nav ul li a:hover{
+    color:peachpuff;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+nav ul li .current a:link{
+  opacity: 50%;
+}
+
+nav ul li .current a:link{
+opacity: 50%;
+}
+
