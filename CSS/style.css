@@ -128,6 +128,9 @@ nav ul li a:visited {
     border-radius: 20px;
     background:white;
     border: solid peru;
+    color:#f18e70; /* I added this after I originally handed the CSS assignment in, literally 
+    just because I hadn't noticed the blue and now that I know about it I have to change it, or it
+    will keep me up at night. */
 }
 
 nav ul li a:hover{
